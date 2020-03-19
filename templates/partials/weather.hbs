@@ -1,0 +1,22 @@
+<div>
+<h2>Hi Welcome to {{title}} using handlebars templating engine</h2>
+        <br>
+        <p>We provide weather services</p>
+        <form action="/weather", method="POST">
+            <label for="region">Region</label>
+            <input type="text" name="region" id="region">
+            <input type="submit" value="Submit">
+        </form>
+        <form action="/weather", method="POST">
+            <div style="float: left;">
+                <label for="latitude">Latitude</label>
+                <input type="text" name="latitude" id="latitude">
+            </div>
+            <div>
+                <label for="longitude">Longitude</label>
+                <input type="text" name="longitude" id="longitude">
+            </div>
+                <input type="submit" value="Submit">
+        </form>
+
+        </div>

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Welcome</title>
+        <link href="./css/style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        {{>header}}
+        {{#if isWeather}} 
+            {{>weather}}
+        {{/if}}
+        {{#if isAbout}} 
+            {{>about}}
+        {{/if}}
+        {{#if isHelp}} 
+            {{>help}}
+        {{/if}}
+        {{#if is404}} 
+            {{>404}}
+        {{/if}}
+        {{>footer}}
+    </body>
+</html>
