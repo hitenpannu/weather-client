@@ -2,6 +2,7 @@
 const templateEngine = require('hbs');
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 3000; // PORT will be set by heroku
 
 // import node module
 const path = require('path');
@@ -62,6 +63,6 @@ app.get('*',(request, response)=>{
 })
 
 
-app.listen(3000, ()=>{
+app.listen(port, ()=>{
     console.log("Started Client")
 })
